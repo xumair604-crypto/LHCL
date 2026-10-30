@@ -14,7 +14,7 @@ Open `index.html` in a browser or serve this directory with any static web serve
 
 ## Content status
 
-The site files are published as supplied. The contact details, service availability, sample test list, and charges shown on the site have not been independently verified. Confirm them with the lab before patients rely on this information. The enquiry form is a front-end convenience and does not store submissions or send them to an inbox.
+The contact details, clinician names and credentials, service availability, sample test list, and charges shown on the site have not been independently verified. The phone and WhatsApp number +92 300 9449677 was provided for this update. Confirm them with the lab before patients rely on this information. The enquiry form is a front-end convenience and does not store submissions or send them to an inbox.
 
 ## GitHub Pages
 
