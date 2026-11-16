@@ -1,21 +1,20 @@
-# Lahore Health Care Lab Website
+# Lahore Health Care Lab website
 
-Static website starter for Lahore Health Care Lab & Research Centre. It runs directly from `index.html`; no build step is required.
+Static site for Lahore Health Care Lab & Research Centre. No build step: open `index.html` or serve the folder.
 
-## Preview
+## Design
 
-Open `index.html` in a browser or serve this directory with any static web server.
+Navy and red taken from the lab's logo, on a paper-white reading column. A fixed navy stage on the left holds the lab's mark and changes to the test rack and the registration certificate as you read. Fonts: Young Serif and Source Serif 4 (Google Fonts).
 
-## Included behavior
+## Behaviour
 
-- Responsive lab information and test directory pages
-- Search for common tests
-- Home collection enquiry form that opens WhatsApp with a prefilled message
+- Test directory with search, filters and a pick list that fills the enquiry message
+- Home collection enquiry form that opens WhatsApp with a prefilled message (nothing is stored)
 
 ## Content status
 
-The contact details, clinician names and credentials, service availability, sample test list, and charges shown on the site have not been independently verified. The phone and WhatsApp number +92 300 9449677 was provided for this update. Confirm them with the lab before patients rely on this information. The enquiry form is a front-end convenience and does not store submissions or send them to an inbox.
+Contact details, team names and credentials, the test list and the registration certificate come from the original repository and have not been independently verified. Two addresses appear (one on the certificate, one as listed); confirm which is current. The service illustrations (`art-*.png`) are drawn placeholders: replace them with the lab's own photographs.
 
 ## GitHub Pages
 
-The site is compatible with GitHub Pages from the repository root. After the repository is created, choose **Settings → Pages → Deploy from a branch**, then select the `main` branch and `/ (root)`.
+Settings > Pages > Deploy from a branch > `main` and `/ (root)`.

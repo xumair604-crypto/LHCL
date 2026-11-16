@@ -3,63 +3,256 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#123b67">
-  <meta name="description" content="Lahore Health Care Lab & Research Centre — laboratory diagnostics, test information and home sample collection enquiries in Lahore.">
+  <meta name="theme-color" content="#0f2a5a">
+  <meta name="description" content="Lahore Health Care Lab & Research Centre, a Punjab Healthcare Commission registered diagnostic laboratory in Faisal Town, Lahore. Test directory and home sample collection enquiries.">
   <link rel="icon" type="image/png" href="assets/lhcl-logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <title>Lahore Health Care Lab | Working For Better Health</title>
+  <title>Lahore Health Care Lab | Diagnostic laboratory in Faisal Town, Lahore</title>
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-  <div class="topbar"><div class="container topbar-inner"><span><span class="dot"></span> Working For Better Health</span><div class="top-links"><a href="tel:04235195335">Call: 042-35195335</a><a href="mailto:info@lhcl.com.pk">info@lhcl.com.pk</a></div></div></div>
-  <header class="site-header"><div class="container nav-wrap">
-    <a class="brand" href="#home" aria-label="Lahore Health Care Lab home"><img src="assets/lhcl-logo.png" alt="Lahore Health Care Lab logo"><span><strong>LAHORE HEALTH CARE LAB</strong><small>& RESEARCH CENTRE (PVT LTD)</small></span></a>
-    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-    <nav class="nav" aria-label="Main navigation"><a href="#services">Services</a><a href="#team">Our Team</a><a href="#registration">Registration</a><a href="#tests">Explore Tests</a><a href="#packages">Health Packages</a><a href="#how-it-works">How It Works</a><a href="#contact">Contact</a><a class="nav-cta" href="#booking">Book a Collection <span>↗</span></a></nav>
-  </div></header>
-  <main>
-    <section class="hero" id="home"><div class="container hero-grid">
-      <div class="hero-copy"><div class="eyebrow"><span class="eyebrow-icon">✦</span> CARE THAT COMES TO YOU</div><h1>Better answers.<br><em>Better health.</em></h1><p class="hero-lead">Reliable diagnostic support, clear information and convenient home sample collection enquiries — built around your peace of mind.</p>
-        <div class="hero-actions"><a class="btn btn-primary" href="#booking">Book Home Collection <span>→</span></a><a class="btn btn-outline" href="#tests"><span class="search-icon">⌕</span> Find a Test</a></div>
-        <div class="hero-trust"><div class="avatar-stack"><span>✚</span><span>♥</span><span>＋</span></div><div><strong>Your health comes first</strong><small>Personal care at every step</small></div><div class="trust-divider"></div><div class="trust-mark">✓</div><div><strong>Helpful support</strong><small>Contact our team for guidance</small></div></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <clipPath id="tri"><path d="M100 8 L192 188 L8 188 Z"/></clipPath>
+    <symbol id="mark" viewBox="0 0 200 200">
+      <path d="M100 8 L192 188 L8 188 Z" fill="#f6f8fb"/>
+      <g clip-path="url(#tri)">
+        <circle cx="58" cy="132" r="56" fill="#d62f35"/>
+        <circle cx="142" cy="132" r="56" fill="#d62f35"/>
+        <rect x="88" y="0" width="24" height="200" fill="#2f56a6"/>
+        <path d="M100 8 L124 55 L76 55 Z" fill="#2f56a6"/>
+        <path d="M100 150 L128 190 L72 190 Z" fill="#2f56a6"/>
+      </g>
+      <circle cx="100" cy="96" r="12" fill="#f6f8fb"/>
+    </symbol>
+    <symbol id="rack" viewBox="0 0 120 160">
+      <g fill="#f6f8fb"><rect x="14" y="30" width="22" height="100" rx="3"/><rect x="49" y="18" width="22" height="112" rx="3"/><rect x="84" y="38" width="22" height="92" rx="3"/></g>
+      <g fill="#d62f35"><rect x="14" y="86" width="22" height="44" rx="3"/><rect x="49" y="70" width="22" height="60" rx="3"/><rect x="84" y="96" width="22" height="34" rx="3"/></g>
+      <g fill="#7f93bd"><rect x="11" y="22" width="28" height="12" rx="2"/><rect x="46" y="10" width="28" height="12" rx="2"/><rect x="81" y="30" width="28" height="12" rx="2"/></g>
+      <rect x="4" y="130" width="112" height="14" fill="#f6f8fb"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="bar" id="top">
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav class="nav" id="nav" aria-label="Main navigation">
+    <a href="#services">Services</a>
+    <a href="#team">Team</a>
+    <a href="#tests">Tests</a>
+    <a href="#registration">Registration</a>
+    <a href="#contact">Contact</a>
+    <a class="act" href="#booking">Request collection</a>
+  </nav>
+</header>
+
+<!-- First screen: the fixed stage and the opening column -->
+<div class="split" id="home">
+  <aside class="stage" aria-hidden="true">
+    <div class="stage-panel on" data-scene="mark"><svg class="stage-mark" role="img" aria-label=""><use href="#mark"/></svg></div>
+    <div class="wordmark" id="wordmark">lhcl</div>
+  </aside>
+
+  <main class="col" id="main">
+    <section class="hero">
+      <div class="who"><img src="assets/lhcl-logo.png" width="56" height="58" alt="Lahore Health Care Lab logo"><span>Lahore Health Care Lab &amp; Research Centre (Pvt Ltd)</span></div>
+      <h1 data-r>Lahore Health Care Lab</h1>
+      <p class="lead" data-r>A diagnostic laboratory registered with the Punjab Healthcare Commission, opposite Jinnah Hospital in Faisal Town, Lahore.</p>
+      <p class="tag" data-r>Working for better health. We’ll find out.</p>
+      <div class="actions" data-r>
+        <a class="btn" href="#booking">Request home collection</a>
+        <a class="textlink" href="#tests">Find a test</a>
       </div>
-      <div class="hero-visual"><div class="visual-glow"></div><div class="hero-photo-card"><div class="photo-top"><span class="live-dot"></span> YOUR HEALTH, OUR PRIORITY <span class="photo-plus">＋</span></div><div class="lab-art"><div class="art-circle circle-one"></div><div class="art-circle circle-two"></div><div class="art-cross">＋</div><div class="tube tube-one"><i></i></div><div class="tube tube-two"><i></i></div><div class="tube tube-three"><i></i></div><div class="art-steth">♡</div><div class="art-base"></div></div><div class="photo-caption"><div class="caption-icon">⌁</div><div><strong>Convenient sample collection</strong><small>Ask us about availability in your area</small></div><span class="caption-arrow">↗</span></div></div><div class="floating-card float-card-one"><span class="float-icon blue">⌂</span><div><strong>Home collection</strong><small>Enquire today</small></div></div><div class="floating-card float-card-two"><span class="float-icon coral">♡</span><div><strong>Care with clarity</strong><small>We’re here to help</small></div></div><div class="decor-dot decor-one"></div><div class="decor-dot decor-two"></div></div>
-    </div></section>
-    <section class="quick-strip"><div class="container quick-grid"><a href="#booking"><span class="quick-icon">⌂</span><span><strong>Home Sample Collection</strong><small>Ask about your location</small></span><b>↗</b></a><a href="#tests"><span class="quick-icon mint">⌕</span><span><strong>Explore Lab Tests</strong><small>Search common test names</small></span><b>↗</b></a><a href="#packages"><span class="quick-icon peach">♡</span><span><strong>Health Packages</strong><small>Find a package that fits</small></span><b>↗</b></a><a href="#contact"><span class="quick-icon lilac">☏</span><span><strong>Talk to Our Team</strong><small>We’ll help with next steps</small></span><b>↗</b></a></div></section>
-    <section class="section services-section" id="services"><div class="container"><div class="section-heading"><div><div class="eyebrow">HOW WE CAN HELP</div><h2>Care and convenience,<br><em>in one place.</em></h2></div><p>From test enquiries to home collection requests, our team can help you understand the next step. Please confirm current availability before visiting.</p></div><div class="service-cards">
-      <article class="service-card"><div class="service-icon icon-blue">⌂</div><h3>Home Sample Collection</h3><p>Request a convenient sample collection and our team will confirm availability and timing.</p><a href="#booking">Request collection <span>→</span></a></article>
-      <article class="service-card"><div class="service-icon icon-green">⌕</div><h3>Laboratory Testing</h3><p>Find common test names and contact us to confirm preparation, availability and current charges.</p><a href="#tests">Explore tests <span>→</span></a></article>
-      <article class="service-card"><div class="service-icon icon-coral">▤</div><h3>Health Packages</h3><p>Ask our team about screening options and which tests may be suitable for your needs.</p><a href="#packages">View package info <span>→</span></a></article>
-      <article class="service-card"><div class="service-icon icon-lilac">◷</div><h3>Reports & Guidance</h3><p>For report access or questions, contact the lab team directly for the correct process.</p><a href="#contact">Contact the lab <span>→</span></a></article>
-    </div></div></section>
-    <section class="section team-section" id="team"><div class="container"><div class="section-heading"><div><div class="eyebrow">OUR SPECIALISTS</div><h2>Experienced care,<br><em>across the lab.</em></h2></div><p>Meet the owner and specialist consultants supporting Lahore Health Care Lab.</p></div><div class="team-grid">
-      <article class="team-card team-card-owner"><span class="team-avatar" aria-hidden="true">FR</span><div class="team-copy"><small>OWNER</small><h3>Fayyaz Rai</h3><p>Owner</p></div></article>
-      <article class="team-card"><span class="team-avatar" aria-hidden="true">AK</span><div class="team-copy"><small>CONSULTANT</small><h3>Dr. Ayesha Khan</h3><p class="team-qualification">M.B.B.S., FCPS</p><p>Consultant Hematologist</p></div></article>
-      <article class="team-card"><span class="team-avatar" aria-hidden="true">MF</span><div class="team-copy"><small>CONSULTANT</small><h3>Dr. Mirza Ameer Faizan Ali</h3><p class="team-qualification">M.B.B.S., M.Phil</p><p>Consultant Microbiologist</p></div></article>
-      <article class="team-card"><span class="team-avatar" aria-hidden="true">MS</span><div class="team-copy"><small>CONSULTANT</small><h3>Dr. Maria Sarfaz</h3><p class="team-qualification">M.B.B.S., M.Phil</p><p>Consultant Molecular Biologist</p></div></article>
-      <article class="team-card"><span class="team-avatar" aria-hidden="true">SK</span><div class="team-copy"><small>CONSULTANT</small><h3>Dr. Shahid Ali Khan</h3><p class="team-qualification">M.B.B.S., FCPS</p><p>Consultant Histopathologist</p></div></article>
-      <article class="team-card"><span class="team-avatar" aria-hidden="true">ZQ</span><div class="team-copy"><small>CONSULTANT</small><h3>Dr. Zayan Qureshi</h3><p class="team-qualification">M.B.B.S., DCP</p><p>Consultant Pathologist</p></div></article>
-    </div></div></section>    <section class="section registration-section" id="registration"><div class="container"><div class="section-heading"><div><div class="eyebrow">FACILITY REGISTRATION</div><h2>Registration<br><em>certificate.</em></h2></div><p>Punjab Healthcare Commission registration certificate provided for Lahore Health Care Lab.</p></div><figure class="certificate-card"><a class="certificate-image-link" href="assets/phc-registration-certificate.jpeg" target="_blank" rel="noopener" aria-label="Open the full-size Punjab Healthcare Commission registration certificate"><img src="assets/phc-registration-certificate.jpeg" alt="Punjab Healthcare Commission registration certificate for Lahore Health Care Lab, registration number R-34806, dated 1 November 2019" loading="lazy"></a><figcaption><strong>Punjab Healthcare Commission · Registration No. R-34806</strong><span>Registered on 1 November 2019 under Section 13 of the Punjab Healthcare Commission Act, 2010.</span><small>Address printed on certificate: 154-A, HBFC Faisal Town, Opp. Jinnah Hospital, Lahore.</small><a href="assets/phc-registration-certificate.jpeg" target="_blank" rel="noopener">View full-size certificate ↗</a></figcaption></figure></div></section>
-    <section class="section tests-section" id="tests"><div class="container"><div class="section-heading test-heading"><div><div class="eyebrow">TEST DIRECTORY</div><h2>What test are you<br><em>looking for?</em></h2></div><p>Search common test names below. This is a starter directory, not a confirmed live catalogue. Contact the lab to verify availability, preparation and price.</p></div><div class="test-search"><span>⌕</span><input id="testSearch" type="search" placeholder="Search by test name (e.g. CBC, HbA1c, Vitamin D)" aria-label="Search tests"><button id="clearSearch" type="button">Clear</button></div><div class="test-chips" aria-label="Popular tests"><button class="chip active" data-filter="all">All tests</button><button class="chip" data-filter="blood">Blood tests</button><button class="chip" data-filter="diabetes">Diabetes</button><button class="chip" data-filter="vitamins">Vitamins</button><button class="chip" data-filter="urine">Urine tests</button></div><div class="test-grid" id="testGrid">
-      <article class="test-item" data-name="Complete Blood Count CBC" data-category="blood"><span class="test-symbol">✚</span><div><strong>Complete Blood Count (CBC)</strong><small>Blood test</small></div><a href="#booking" aria-label="Enquire about CBC">↗</a></article>
-      <article class="test-item" data-name="HbA1c Glycated Hemoglobin" data-category="diabetes blood"><span class="test-symbol">◉</span><div><strong>HbA1c</strong><small>Diabetes monitoring</small></div><a href="#booking" aria-label="Enquire about HbA1c">↗</a></article>
-      <article class="test-item" data-name="Fasting Blood Glucose Sugar" data-category="diabetes blood"><span class="test-symbol">◉</span><div><strong>Fasting Blood Glucose</strong><small>Blood test</small></div><a href="#booking" aria-label="Enquire about fasting blood glucose">↗</a></article>
-      <article class="test-item" data-name="Serum Creatinine eGFR Kidney Function" data-category="blood"><span class="test-symbol">⌁</span><div><strong>Serum Creatinine / eGFR</strong><small>Kidney function</small></div><a href="#booking" aria-label="Enquire about creatinine">↗</a></article>
-      <article class="test-item" data-name="Lipid Profile Cholesterol" data-category="blood"><span class="test-symbol">◌</span><div><strong>Lipid Profile</strong><small>Cholesterol profile</small></div><a href="#booking" aria-label="Enquire about lipid profile">↗</a></article>
-      <article class="test-item" data-name="Thyroid Profile TSH T3 T4" data-category="blood"><span class="test-symbol">⌘</span><div><strong>Thyroid Profile</strong><small>Thyroid function</small></div><a href="#booking" aria-label="Enquire about thyroid profile">↗</a></article>
-      <article class="test-item" data-name="Vitamin D Vitamin D3" data-category="vitamins blood"><span class="test-symbol">☼</span><div><strong>Vitamin D (D3)</strong><small>Vitamin test</small></div><a href="#booking" aria-label="Enquire about Vitamin D">↗</a></article>
-      <article class="test-item" data-name="Urine Complete Examination Urine R E" data-category="urine"><span class="test-symbol">◍</span><div><strong>Urine Complete Examination</strong><small>Urine test</small></div><a href="#booking" aria-label="Enquire about urine examination">↗</a></article>
-      <article class="test-item" data-name="Serum Uric Acid" data-category="blood"><span class="test-symbol">◇</span><div><strong>Serum Uric Acid</strong><small>Blood test</small></div><a href="#booking" aria-label="Enquire about uric acid">↗</a></article>
-    </div><div class="no-results" id="noResults" hidden>No matching tests found. Try another search or contact our team.</div><div class="directory-note">Test availability, fasting requirements, prices and turnaround times may change. Please confirm directly with the laboratory.</div></div></section>
-    <section class="section package-section" id="packages"><div class="container package-panel"><div class="package-art"><div class="package-orbit orbit-a"></div><div class="package-orbit orbit-b"></div><div class="health-heart">♡</div><div class="package-cross">＋</div><div class="package-pill">HEALTH CHECK</div></div><div class="package-copy"><div class="eyebrow">PREVENTIVE HEALTH</div><h2>Make time for<br><em>your health.</em></h2><p>Ask us about available health screening packages, what each package includes, and whether any preparation is required before your visit.</p><ul><li><span>✓</span> Package contents explained clearly</li><li><span>✓</span> Current pricing confirmed by the team</li><li><span>✓</span> Guidance on preparation and sample collection</li></ul><a class="btn btn-primary" href="#booking">Enquire About Packages <span>→</span></a><small class="package-disclaimer">Package names, included tests and prices must be confirmed before booking.</small></div></div></section>
-    <section class="section process-section" id="how-it-works"><div class="container"><div class="center-heading"><div class="eyebrow">SIMPLE STEPS</div><h2>Getting started is <em>easy.</em></h2><p>Send an enquiry and our team can help confirm the details.</p></div><div class="process-grid"><article><div class="step-number">01</div><div class="step-icon">▤</div><h3>Tell us what you need</h3><p>Choose a test or describe the service you’re enquiring about.</p></article><article><div class="step-number">02</div><div class="step-icon">☏</div><h3>We confirm the details</h3><p>Our team can confirm availability, price, preparation and timing.</p></article><article><div class="step-number">03</div><div class="step-icon">⌂</div><h3>Agree on next steps</h3><p>Arrange a visit or request home collection if available in your area.</p></article></div></div></section>
-    <section class="section booking-section" id="booking"><div class="container booking-grid"><div class="booking-copy"><div class="eyebrow">WE’RE HERE TO HELP</div><h2>Request a home<br><em>sample collection.</em></h2><p>Complete the short form and continue to WhatsApp with your enquiry. This demo website does not send or store your information itself; the message is only sent if you choose to send it in WhatsApp.</p><div class="booking-points"><span>✓ Convenient enquiry form</span><span>✓ Team confirms service availability</span><span>✓ No online payment required</span></div><div class="booking-call"><span class="call-circle">☏</span><div><small>Call or WhatsApp</small><a href="tel:+923009449677">+92 300 9449677</a><a class="booking-alt" href="tel:04235195335">042-35195335</a></div></div></div><form id="bookingForm" class="booking-form"><div class="form-title"><div><h3>Collection enquiry</h3><p>Share a few details to get started.</p></div><span class="form-mark">✦</span></div><div class="form-row"><label>Full name<input name="name" required autocomplete="name" placeholder="Your name"></label><label>Phone / WhatsApp<input name="phone" required autocomplete="tel" placeholder="03xx-xxxxxxx"></label></div><label>What do you need?<select name="service" required><option value="" disabled selected>Select an option</option><option>Home sample collection</option><option>Laboratory test enquiry</option><option>Health package enquiry</option><option>Report access / support</option><option>Other enquiry</option></select></label><div class="form-row"><label>Preferred date<input name="date" type="date"></label><label>Area in Lahore<input name="area" placeholder="e.g. Faisal Town"></label></div><label>Test name or message<textarea name="message" rows="3" placeholder="Mention test names or any details (optional)"></textarea></label><label class="consent"><input type="checkbox" required> <span>I agree to open WhatsApp with these details to send my enquiry.</span></label><button class="btn btn-primary form-submit" type="submit">Continue to WhatsApp <span>↗</span></button><p class="form-feedback" id="formFeedback" role="status"></p><small class="privacy-note">Please do not include sensitive medical details in this general enquiry form.</small></form></div></section>
-    <section class="contact-section" id="contact"><div class="container contact-grid"><div><div class="eyebrow">GET IN TOUCH</div><h2>Questions? We’re<br><em>one call away.</em></h2><p>Contact the lab to confirm current hours, branch details, test availability and pricing before travelling.</p><a class="btn btn-white" href="tel:04235195335">Call 042-35195335 <span>↗</span></a></div><div class="contact-details"><div class="contact-detail"><span class="contact-icon">⌖</span><div><small>Primary listed address</small><strong>524-A Faisal Town, Moulana Shoukat Ali Road, near Jinnah Hospital, Lahore</strong></div></div><div class="contact-detail"><span class="contact-icon">☏</span><div><small>Phone &amp; WhatsApp</small><a href="tel:+923009449677">+92 300 9449677</a><a href="https://wa.me/923009449677" target="_blank" rel="noopener">Message us on WhatsApp</a></div></div><div class="contact-detail"><span class="contact-icon">✉</span><div><small>Email</small><a href="mailto:info@lhcl.com.pk">info@lhcl.com.pk</a></div></div><div class="contact-detail"><span class="contact-icon">◎</span><div><small>Website</small><a href="https://www.lhcl.com.pk" target="_blank" rel="noopener">www.lhcl.com.pk</a></div></div><div class="contact-detail"><span class="contact-icon">◷</span><div><small>Opening hours</small><strong>Please call to confirm current hours</strong></div></div></div></div></section>
+    </section>
   </main>
-  <footer class="footer"><div class="container footer-main"><a class="brand footer-brand" href="#home"><img src="assets/lhcl-logo.png" alt=""><span><strong>LAHORE HEALTH CARE LAB</strong><small>& RESEARCH CENTRE (PVT LTD)</small></span></a><p>Working For Better Health.<br><small>We’ll Find Out.</small></p><div class="footer-links"><a href="#services">Services</a><a href="#team">Our Team</a><a href="#registration">Registration</a><a href="#tests">Tests</a><a href="#booking">Home Collection</a><a href="#contact">Contact</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> Lahore Health Care Lab & Research Centre (Pvt Ltd).</span><span>For information only — not a substitute for medical advice.</span></div></footer>
-  <script src="script.js"></script>
+</div>
+
+<!-- Services: breaks the split, one saturated field -->
+<section class="field" id="services">
+  <div class="field-in">
+    <h2 class="pin">What the lab does</h2>
+    <div class="blocks">
+      <article class="block" data-r>
+        <h3>Laboratory testing</h3>
+        <div class="block-row">
+          <img class="pic" src="art-rack.png" width="450" height="506" loading="lazy" alt="Rack of sample tubes with red samples">
+          <ul>
+            <li>Blood, urine and diabetes tests</li>
+            <li>Reviewed by consultant pathologists</li>
+            <li>Preparation and charges confirmed with you</li>
+            <li>Search the directory below</li>
+          </ul>
+        </div>
+      </article>
+      <article class="block flip" data-r>
+        <h3>Home sample collection</h3>
+        <div class="block-row">
+          <img class="pic" src="art-house.png" width="450" height="506" loading="lazy" alt="A house with a location pin, for home collection">
+          <ul>
+            <li>Send an enquiry by form or WhatsApp</li>
+            <li>Tell us your area in Lahore</li>
+            <li>The team confirms availability and timing</li>
+            <li>No online payment</li>
+          </ul>
+        </div>
+      </article>
+      <article class="block" data-r>
+        <h3>Reports and guidance</h3>
+        <div class="block-row">
+          <img class="pic" src="art-sheet.png" width="450" height="506" loading="lazy" alt="A report sheet with a red cross">
+          <ul>
+            <li>Ask about report access by phone</li>
+            <li>Questions go to the lab team</li>
+            <li>Call 042-35195335 for the right process</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Team, tests, registration: the split resumes -->
+<div class="split split-b">
+  <aside class="stage" aria-hidden="true">
+    <div class="stage-panel on" data-scene="mark"><svg class="stage-mark" role="img" aria-label=""><use href="#mark"/></svg></div>
+    <div class="stage-panel" data-scene="tubes"><svg class="stage-tubes" role="img" aria-label=""><use href="#rack"/></svg></div>
+    <div class="stage-panel" data-scene="cert"><img src="assets/phc-registration-certificate.jpeg" alt="" width="700" height="894"></div>
+  </aside>
+
+  <div class="col">
+    <section class="sec" id="team" data-scene="mark">
+      <h2 data-r>Consultants and owner</h2>
+      <p class="intro" data-r>Five consultants across haematology, microbiology, molecular biology, histopathology and pathology, with the lab’s owner.</p>
+      <div class="rows" data-r>
+        <p class="grp">Owner</p>
+        <div class="row"><span class="dot">FR</span><span class="nm">Fayyaz Rai</span><span class="val">Owner</span></div>
+        <p class="grp">Consultants</p>
+        <div class="row"><span class="dot">AK</span><span class="nm">Dr. Ayesha Khan<small>M.B.B.S., FCPS</small></span><span class="val">Hematologist</span></div>
+        <div class="row"><span class="dot">MF</span><span class="nm">Dr. Mirza Ameer Faizan Ali<small>M.B.B.S., M.Phil</small></span><span class="val">Microbiologist</span></div>
+        <div class="row"><span class="dot">MS</span><span class="nm">Dr. Maria Sarfaz<small>M.B.B.S., M.Phil</small></span><span class="val">Molecular biologist</span></div>
+        <div class="row"><span class="dot">SK</span><span class="nm">Dr. Shahid Ali Khan<small>M.B.B.S., FCPS</small></span><span class="val">Histopathologist</span></div>
+        <div class="row"><span class="dot">ZQ</span><span class="nm">Dr. Zayan Qureshi<small>M.B.B.S., DCP</small></span><span class="val">Pathologist</span></div>
+      </div>
+    </section>
+
+    <section class="sec" id="tests" data-scene="tubes">
+      <h2 data-r>Find a test</h2>
+      <p class="intro" data-r>Search the common tests below and add the ones you want to your enquiry. Availability, fasting requirements, charges and turnaround are confirmed by the lab.</p>
+      <div class="finder" data-r>
+        <label class="search"><span class="sr">Search tests</span><input id="testSearch" type="search" placeholder="Search by name, for example CBC or Vitamin D" autocomplete="off"></label>
+        <div class="chips" role="group" aria-label="Test type">
+          <button class="chip on" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" type="button" data-filter="blood" aria-pressed="false">Blood</button>
+          <button class="chip" type="button" data-filter="diabetes" aria-pressed="false">Diabetes</button>
+          <button class="chip" type="button" data-filter="vitamins" aria-pressed="false">Vitamins</button>
+          <button class="chip" type="button" data-filter="urine" aria-pressed="false">Urine</button>
+        </div>
+        <div class="rows tests" id="testGrid">
+          <a class="row test-item" href="#booking" data-name="Complete Blood Count CBC" data-category="blood"><span class="tick" aria-hidden="true"></span><span class="nm">Complete Blood Count (CBC)</span><span class="val">Blood</span></a>
+          <a class="row test-item" href="#booking" data-name="HbA1c Glycated Hemoglobin" data-category="diabetes blood"><span class="tick" aria-hidden="true"></span><span class="nm">HbA1c</span><span class="val">Diabetes</span></a>
+          <a class="row test-item" href="#booking" data-name="Fasting Blood Glucose Sugar" data-category="diabetes blood"><span class="tick" aria-hidden="true"></span><span class="nm">Fasting Blood Glucose</span><span class="val">Diabetes</span></a>
+          <a class="row test-item" href="#booking" data-name="Serum Creatinine eGFR Kidney Function" data-category="blood"><span class="tick" aria-hidden="true"></span><span class="nm">Serum Creatinine / eGFR</span><span class="val">Kidney function</span></a>
+          <a class="row test-item" href="#booking" data-name="Lipid Profile Cholesterol" data-category="blood"><span class="tick" aria-hidden="true"></span><span class="nm">Lipid Profile</span><span class="val">Cholesterol</span></a>
+          <a class="row test-item" href="#booking" data-name="Thyroid Profile TSH T3 T4" data-category="blood"><span class="tick" aria-hidden="true"></span><span class="nm">Thyroid Profile</span><span class="val">Thyroid</span></a>
+          <a class="row test-item" href="#booking" data-name="Vitamin D Vitamin D3" data-category="vitamins blood"><span class="tick" aria-hidden="true"></span><span class="nm">Vitamin D (D3)</span><span class="val">Vitamin</span></a>
+          <a class="row test-item" href="#booking" data-name="Urine Complete Examination Urine R E" data-category="urine"><span class="tick" aria-hidden="true"></span><span class="nm">Urine Complete Examination</span><span class="val">Urine</span></a>
+          <a class="row test-item" href="#booking" data-name="Serum Uric Acid" data-category="blood"><span class="tick" aria-hidden="true"></span><span class="nm">Serum Uric Acid</span><span class="val">Blood</span></a>
+        </div>
+        <p class="none" id="noResults" hidden>No matching test. Try another name, or call the lab.</p>
+        <p class="picked" id="picked" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="sec" id="registration" data-scene="cert">
+      <h2 data-r>Registered facility</h2>
+      <p class="intro" data-r>Registered with the Punjab Healthcare Commission, number R-34806, as a private healthcare establishment on 1 November 2019 under Section 13 of the Punjab Healthcare Commission Act, 2010.</p>
+      <figure class="cert-inline" data-r>
+        <a href="assets/phc-registration-certificate.jpeg" target="_blank" rel="noopener"><img src="assets/phc-registration-certificate.jpeg" width="700" height="894" loading="lazy" alt="Punjab Healthcare Commission registration certificate for Lahore Health Care Lab, number R-34806, dated 1 November 2019"></a>
+      </figure>
+      <p class="intro" data-r>The address printed on the certificate is 154-A, HBFC Faisal Town, Opp. Jinnah Hospital, Lahore. <a class="textlink" href="assets/phc-registration-certificate.jpeg" target="_blank" rel="noopener">Open the full certificate</a></p>
+    </section>
+  </div>
+</div>
+
+<!-- How it works: a printed slip -->
+<section class="field slipfield" id="how-it-works">
+  <div class="slip-grid">
+    <div class="slip-copy" data-r>
+      <h2>How it works</h2>
+      <p>Send an enquiry and the lab team confirms what you need before anyone travels.</p>
+    </div>
+    <div class="slip" data-r>
+      <h3>You send</h3>
+      <p class="srow"><span>Test names or the service you need</span><i></i><b>Form or WhatsApp</b></p>
+      <p class="srow"><span>Your area in Lahore</span><i></i><b>Optional date</b></p>
+      <h3>We confirm</h3>
+      <p class="srow"><span>Availability and timing</span><i></i><b>By phone</b></p>
+      <p class="srow"><span>Price and preparation</span><i></i><b>Before you pay</b></p>
+      <h3>You choose</h3>
+      <p class="srow"><span>Visit the lab, or home collection</span><i></i><b>Where offered</b></p>
+      <p class="srow last"><span>No online payment is taken on this site</span><b>You decide</b></p>
+    </div>
+  </div>
+</section>
+
+<!-- Booking -->
+<section class="sec wide" id="booking">
+  <div class="book-grid">
+    <div data-r>
+      <h2>Request a home sample collection</h2>
+      <p class="intro">Fill in the short form and it opens WhatsApp with your message ready. Nothing is stored or sent from this page; the message goes only if you press send in WhatsApp.</p>
+      <p class="callbox"><span>Call or WhatsApp</span><a href="tel:+923009449677">+92 300 9449677</a><a href="tel:04235195335">042-35195335</a></p>
+    </div>
+    <form id="bookingForm" class="form" data-r>
+      <div class="two">
+        <label>Full name<input name="name" required autocomplete="name"></label>
+        <label>Phone or WhatsApp<input name="phone" required autocomplete="tel" placeholder="03xx-xxxxxxx"></label>
+      </div>
+      <label>What do you need?
+        <select name="service" required>
+          <option value="" disabled selected>Select an option</option>
+          <option>Home sample collection</option><option>Laboratory test enquiry</option><option>Report access / support</option><option>Other enquiry</option>
+        </select>
+      </label>
+      <div class="two">
+        <label>Preferred date<input name="date" type="date"></label>
+        <label>Area in Lahore<input name="area" placeholder="For example Faisal Town"></label>
+      </div>
+      <label>Tests or message<textarea name="message" id="message" rows="3" placeholder="Test names or any details (optional)"></textarea></label>
+      <label class="consent"><input type="checkbox" required> <span>I agree to open WhatsApp with these details to send my enquiry.</span></label>
+      <button class="btn wide-btn" type="submit">Continue to WhatsApp</button>
+      <p class="feedback" id="formFeedback" role="status"></p>
+      <p class="note">Please do not include sensitive medical details in this general enquiry.</p>
+    </form>
+  </div>
+</section>
+
+<!-- Contact: the email as display type -->
+<section class="close" id="contact">
+  <p class="close-say">Write to the lab, or call to confirm hours, availability and charges.</p>
+  <a class="email" id="email" href="mailto:info@lhcl.com.pk"><span>info@</span><span>lhcl.com.pk</span></a>
+  <div class="close-foot">
+    <div>
+      <p>042-35195335 · +92 300 9449677</p>
+      <p>524-A Faisal Town, Moulana Shoukat Ali Road, near Jinnah Hospital, Lahore</p>
+    </div>
+    <div class="r">
+      <p><a href="https://wa.me/923009449677" target="_blank" rel="noopener">WhatsApp</a> · <a href="https://www.lhcl.com.pk" target="_blank" rel="noopener">www.lhcl.com.pk</a></p>
+      <p>Please call to confirm current opening hours.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <span>Diagnostic laboratory, Lahore</span>
+  <nav aria-label="Footer"><a href="#services">Services</a><a href="#team">Team</a><a href="#tests">Tests</a><a href="#booking">Home collection</a></nav>
+  <span class="r">© <span id="year"></span> Lahore Health Care Lab · For information only, not medical advice</span>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
-
